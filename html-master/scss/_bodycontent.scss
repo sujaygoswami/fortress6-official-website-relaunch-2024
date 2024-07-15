@@ -1,0 +1,33 @@
+.fortress6 {
+
+
+    // basic
+    .v-align-center{
+        align-items: center;
+    }
+    // basic
+
+    // start-page-banner
+    .start-page-banner{
+        min-height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+
+        &:before{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            z-index: 1;
+            content: ' ';
+            background-color: rgba($color: #000000, $alpha: 0.8);
+            display: block;
+        }
+    }
+    // start-page-banner
+
+
+}
