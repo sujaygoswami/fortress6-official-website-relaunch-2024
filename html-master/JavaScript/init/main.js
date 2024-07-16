@@ -119,14 +119,7 @@ jQuery('.flexslider').flexslider({
         });
 
 
-// set back
 
-jQuery('.set-back').each(function(){
-
- var SETBACK = jQuery(this).find('img').attr('src');
-  jQuery(this).css('background-image', 'url(' + SETBACK + ')');
-
-});
 
 
 
@@ -168,7 +161,14 @@ jQuery('.touch .has-submenu > a').addClass('dual-click');
 // load
 jQuery(window).load(function(){
 
+// set back
 
+jQuery('.set-back').each(function(){
+
+  var SETBACK = jQuery(this).find('img').attr('src');
+   jQuery(this).css('background-image', 'url(' + SETBACK + ')');
+ 
+ });
 
 
 // match height

@@ -7,6 +7,8 @@
     --primary-font-medium: 500;
     --primary-font-bold: bold;
     --primary-font-black: 900;
+    --secondary-font: 'Grotesk';
+    --secondary-font-medium: 500;
 }
 
 
@@ -21,7 +23,9 @@
 // colors
 :root{
     --site-dark-color: #1c1c1c;
-    --site-primary-color: #f4522c;
+    --site-primary-color: #e34500;
+    --site-primary-color-dark: #c83c01;
+    --site-text-dark: #212529;
 }
 
 $site-dark-color: #1c1c1c;
