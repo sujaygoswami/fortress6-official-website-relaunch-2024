@@ -41,7 +41,7 @@ $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
 $red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
+$orange:  #e34500 !default;
 $yellow:  #ffc107 !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
@@ -298,13 +298,13 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
+$primary:       $orange !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         $gray-300 !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
