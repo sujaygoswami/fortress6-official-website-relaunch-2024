@@ -9533,8 +9533,25 @@ html, body {
     padding-left: 0px;
     padding-right: 0px; }
 
+.fortress6 .my-col.bordered-col-right-side-over-dark {
+  border-right: 1px solid rgba(255, 255, 255, 0.2); }
+  .fortress6 .my-col.bordered-col-right-side-over-dark:last-child {
+    border: none; }
+
+.fortress6 .default-top-border-over-dark {
+  border-top: 1px solid rgba(255, 255, 255, 0.2); }
+
+.fortress6 .default-bottom-border-over-dark {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+
+.fortress6 .default-all-border-over-dark {
+  border: 1px solid rgba(255, 255, 255, 0.2); }
+
 .fortress6 .v-align-center {
   align-items: center; }
+
+.fortress6 .v-align-end {
+  align-items: end; }
 
 .fortress6 .image-full-width {
   width: 100%;
@@ -9619,6 +9636,9 @@ html, body {
   font-size: 134px;
   line-height: .84em;
   text-transform: uppercase; }
+  .fortress6 h1.sm-text, .fortress6 .sm-text.h1 {
+    font-size: 60px;
+    line-height: normal; }
   .fortress6 h1 span, .fortress6 .h1 span {
     -webkit-text-stroke: 1px #fff;
     -webkit-text-fill-color: transparent; }
@@ -9665,6 +9685,12 @@ html, body {
   letter-spacing: 1.5px;
   font-size: 16px;
   line-height: 30px; }
+  .fortress6 p.tiny-para {
+    font-size: 12px;
+    line-height: normal; }
+
+.fortress6 .basic-entry a:hover {
+  color: var(--site-primary-color); }
 
 .fortress6 .start-page-banner {
   min-height: 100vh;
@@ -9768,6 +9794,97 @@ html, body {
     opacity: 1;
     color: var(--site-primary-color);
     font-weight: var(--primary-font-light); }
+
+.fortress6 .footer-menu-links ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+  .fortress6 .footer-menu-links ul li {
+    margin: 10px 0 0 0;
+    padding: 0px;
+    font-size: 16px;
+    letter-spacing: 3px; }
+    .fortress6 .footer-menu-links ul li:first-child {
+      margin-top: 0px; }
+    .fortress6 .footer-menu-links ul li:hover > a {
+      color: var(--site-primary-color); }
+    .fortress6 .footer-menu-links ul li a {
+      color: white; }
+
+.fortress6 .footer-social-text {
+  padding: 10px; }
+  .fortress6 .footer-social-text p {
+    font-size: 12px; }
+
+.fortress6 .footer-essential-link {
+  padding: 0 10px; }
+  .fortress6 .footer-essential-link.basic-entry p {
+    font-size: 12px; }
+  .fortress6 .footer-essential-link a {
+    margin-left: 10px; }
+    .fortress6 .footer-essential-link a:first-child {
+      margin-left: 0px; }
+
+.fortress6 .footer-social-link {
+  display: flex; }
+  .fortress6 .footer-social-link > div {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 26px;
+    position: relative; }
+    .fortress6 .footer-social-link > div:before {
+      content: ' ';
+      width: 0px;
+      left: 0px;
+      top: -1px;
+      height: 1px;
+      background-color: var(--site-primary-color);
+      position: absolute;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+    .fortress6 .footer-social-link > div:after {
+      content: ' ';
+      width: 0px;
+      right: 0px;
+      bottom: -1px;
+      height: 1px;
+      background-color: var(--site-primary-color);
+      position: absolute;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+    .fortress6 .footer-social-link > div:hover:before, .fortress6 .footer-social-link > div:hover:after {
+      width: 100%; }
+    .fortress6 .footer-social-link > div:hover {
+      color: var(--site-primary-color); }
+      .fortress6 .footer-social-link > div:hover a:before, .fortress6 .footer-social-link > div:hover a:after {
+        height: 82px; }
+    .fortress6 .footer-social-link > div a {
+      display: block;
+      position: relative; }
+      .fortress6 .footer-social-link > div a:before {
+        content: ' ';
+        width: 1px;
+        right: -1px;
+        top: -1px;
+        height: 0px;
+        background-color: var(--site-primary-color);
+        position: absolute;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s; }
+      .fortress6 .footer-social-link > div a:after {
+        content: ' ';
+        width: 1px;
+        left: -1px;
+        bottom: -1px;
+        height: 0px;
+        background-color: var(--site-primary-color);
+        position: absolute;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s; }
 
 /*! Vendor */
 /*!
