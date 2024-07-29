@@ -282,7 +282,7 @@
 
         &.opech-type-primary{
             &:before{
-                background-color: rgba($color: #ff5b15, $alpha: 0.9);
+                background-color: rgba($color: $site-primary-color, $alpha: 0.9);
             }
             
         }
