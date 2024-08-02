@@ -9448,9 +9448,10 @@ html, body {
   left: 0px;
   top: 0px;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: white;
   -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px); }
+  backdrop-filter: blur(20px);
+  box-shadow: 0 1px 5px #a1a0a0; }
   .fortress6 header.header > .main-wrap {
     display: grid;
     align-items: center;
@@ -9473,7 +9474,7 @@ html, body {
       .fortress6 .site-main-nav ul li:hover > a:after, .fortress6 .site-main-nav ul li.active > a:after {
         width: 100%; }
     .fortress6 .site-main-nav ul li > a {
-      color: white;
+      color: var(--site-dark-color);
       position: relative;
       padding-bottom: 3px; }
       .fortress6 .site-main-nav ul li > a:after {
@@ -9538,14 +9539,34 @@ html, body {
   .fortress6 .my-col.bordered-col-right-side-over-dark:last-child {
     border: none; }
 
+.fortress6 .my-col.bordered-col-right-side-over-light {
+  border-right: 1px solid rgba(28, 28, 28, 0.2); }
+  .fortress6 .my-col.bordered-col-right-side-over-light:last-child {
+    border: none; }
+
 .fortress6 .default-top-border-over-dark {
   border-top: 1px solid rgba(255, 255, 255, 0.2); }
 
 .fortress6 .default-bottom-border-over-dark {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
 
+.fortress6 .default-top-border-over-light {
+  border-top: 1px solid rgba(28, 28, 28, 0.2); }
+
+.fortress6 .default-bottom-border-over-light {
+  border-bottom: 1px solid rgba(28, 28, 28, 0.2); }
+
 .fortress6 .default-all-border-over-dark {
   border: 1px solid rgba(255, 255, 255, 0.2); }
+
+.fortress6 .default-top-border-over-light {
+  border-top: 1px solid rgba(28, 28, 28, 0.2); }
+
+.fortress6 .default-bottom-border-over-light {
+  border-bottom: 1px solid rgba(28, 28, 28, 0.2); }
+
+.fortress6 .default-all-border-over-light {
+  border: 1px solid rgba(28, 28, 28, 0.2); }
 
 .fortress6 .v-align-center {
   align-items: center; }
@@ -9813,7 +9834,7 @@ html, body {
     .fortress6 .footer-menu-links ul li:hover > a {
       color: var(--site-primary-color); }
     .fortress6 .footer-menu-links ul li a {
-      color: white; }
+      color: var(--site-dark-color); }
 
 .fortress6 .footer-social-text {
   padding: 10px; }
@@ -9836,8 +9857,8 @@ html, body {
     height: 80px;
     text-align: center;
     line-height: 80px;
-    color: white;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--site-dark-color);
+    border-left: 1px solid rgba(28, 28, 28, 0.2);
     font-size: 26px;
     position: relative; }
     .fortress6 .footer-social-link > div:before {

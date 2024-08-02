@@ -23,7 +23,7 @@
                 }
 
                 a{
-                    color: white;
+                    color: var(--site-dark-color);
                 }
             }
         }
@@ -60,8 +60,8 @@
             height: 80px;
             text-align: center;
             line-height: 80px;
-            color: white;
-            border-left: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--site-dark-color);
+            border-left: 1px solid rgba(28,28,28,0.2);
             font-size: 26px;
             position: relative;
             // &:last-child{
