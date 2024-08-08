@@ -1,0 +1,171 @@
+.fortress6{
+   
+
+    header.header{
+        width: 100%;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        z-index: 100;
+
+        .header-logo-holder{
+            .scrolled-logo{
+                display: none;
+            }
+        }
+
+        &.scrolled-effect{
+            .header-logo-holder{
+                .scrolled-logo{
+                    display: block;
+                }
+                .normal-logo{
+                    display: none;
+                }
+            }
+            .header-main-wrap{
+                height: 90px;
+                background-color: white;
+                border-bottom-color: transparent;
+                box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+            }
+
+            .site-header-nav{
+                ul{
+                    li{
+                        color: var(--site-text-dark);
+
+                        & > a{
+                            color: var(--site-text-dark);
+                        }
+
+                        & > a{
+                            line-height: 80px;
+
+                            & + span{
+                                bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .service-nav{
+                ul{
+                    li{
+                        border-color: var(--site-primary-color);
+                    }
+                }
+            }
+        }
+        .header-main-wrap{
+            height: 110px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.1);
+            @include transition(all 0.3s ease 0s);
+        }
+
+        .service-nav{
+            ul{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+
+                li{
+                    margin: 0px;
+                    padding: 0px;
+                    color: var(--site-primary-color);
+                    font-size: 16px;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid rgba($color: #ffffff, $alpha: 0.1);
+                    text-align: center;
+                    line-height: 36px;
+                    @include transition(all 0.3s ease 0s);
+
+                    &:hover{
+                        color: white;
+                        background-color: var(--site-primary-color);
+
+                        a{
+                            color: white;
+                        }
+                    }
+
+
+                    a{
+                        color: var(--site-primary-color);
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .site-header-nav{
+            ul{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                height: 100%;
+                display: flex;
+                column-gap: 25px;
+
+                li{
+                    margin: 0px;
+                    padding: 0px;
+                    position: relative;
+                    height: 100%;
+                    color: white;
+                    font-size: 18px;
+                    &:hover, &.active{
+                        & > a{
+                            color: var(--site-primary-color);
+
+                            & + span{
+                                &::after{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    & *{
+                        @include transition(all 0.5s ease 0s);
+                    }
+                    
+
+                    a{
+                        color: white;
+                        line-height: 110px;
+                        display: block;
+
+                        & + span{
+                            position: absolute;
+                            width: 100%;
+                            height: 2px;
+                            left: 0px;
+                            bottom: 0px;
+                            display: block;
+                            text-align: center;
+
+                            &::after{
+                                content: ' ';
+                                width: 0px;
+                                height: 100%;
+                                background-color: var(--site-primary-color);
+                                display: inline-block;
+                                vertical-align: top;
+                                @include transition(all 0.5s ease 0s);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
