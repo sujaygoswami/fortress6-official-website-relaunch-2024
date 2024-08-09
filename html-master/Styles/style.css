@@ -9288,6 +9288,7 @@ textarea.form-control-lg {
 :root {
   --site-primary-color: #009ee3;
   --site-primary-color-light: #04b2fc;
+  --site-primary-color-extreme-light: #EEF9FF;
   --site-secondary-color: #6e7070;
   --site-text-dark: #091E3E; }
 
@@ -9342,7 +9343,8 @@ html, body {
   margin: 0px;
   padding: 0px;
   font-family: var(--site-primary-font);
-  font-weight: var(--site-primary-font-light); }
+  font-weight: var(--site-primary-font-light);
+  color: var(--site-text-dark); }
   .fortress6 *:focus {
     outline: 0; }
   .fortress6 .set-back img {
@@ -9533,8 +9535,25 @@ html, body {
             -webkit-transition: all 0.5s ease 0s;
             transition: all 0.5s ease 0s; }
 
+.fortress6 .my-row {
+  row-gap: 1.5rem; }
+
+.fortress6 .section-pad-default {
+  padding: 100px 0; }
+
+.fortress6 .global-shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+
+.fortress6 .site-bg-Primarylight {
+  background-color: var(--site-primary-color-extreme-light); }
+
+.fortress6 .site-text-dark {
+  color: var(--site-text-dark); }
+
 .fortress6 .uplift-section-type-1 {
   margin-top: -75px; }
+  .fortress6 .uplift-section-type-1 + section {
+    padding-top: 200px; }
 
 .fortress6 .grid-flex-v-align-center {
   align-items: center; }
@@ -9555,6 +9574,16 @@ html, body {
 .fortress6 .element-gap-normal {
   margin-bottom: 3rem; }
 
+.fortress6 img.block-img {
+  width: 100%;
+  height: auto; }
+
+.fortress6 img.img-default-radius {
+  border-radius: 2px; }
+
+.fortress6 .global-square-icon.lg-font i {
+  font-size: 22px; }
+
 .fortress6 .global-square-icon i {
   width: 60px;
   height: 60px;
@@ -9562,6 +9591,25 @@ html, body {
   line-height: 60px;
   border-radius: 2px;
   font-size: 18px; }
+
+.fortress6 .global-iconic-widget {
+  display: flex;
+  column-gap: 25px;
+  row-gap: 25px; }
+  .fortress6 .global-iconic-widget.wrap-view {
+    flex-wrap: wrap; }
+
+.fortress6 .basic-entry strong {
+  font-weight: var(--site-primary-font-normal); }
+
+.fortress6 .basic-entry h1, .fortress6 .basic-entry .h1, .fortress6 .basic-entry h2, .fortress6 .basic-entry .h2, .fortress6 .basic-entry h3, .fortress6 .basic-entry .h3, .fortress6 .basic-entry h4, .fortress6 .basic-entry .h4, .fortress6 .basic-entry h5, .fortress6 .basic-entry .h5, .fortress6 .basic-entry h6, .fortress6 .basic-entry .h6 {
+  color: var(--site-text-dark); }
+
+.fortress6 .basic-entry h1, .fortress6 .basic-entry .h1, .fortress6 .basic-entry h2, .fortress6 .basic-entry .h2, .fortress6 .basic-entry h3, .fortress6 .basic-entry .h3 {
+  font-weight: var(--site-primary-font-light); }
+
+.fortress6 .basic-entry h4, .fortress6 .basic-entry .h4, .fortress6 .basic-entry h5, .fortress6 .basic-entry .h5, .fortress6 .basic-entry h6, .fortress6 .basic-entry .h6 {
+  font-weight: var(--site-primary-font-thin); }
 
 .fortress6 .basic-entry h1, .fortress6 .basic-entry .h1 {
   font-size: 5rem;
@@ -9580,12 +9628,38 @@ html, body {
   line-height: normal; }
 
 .fortress6 .basic-entry h5, .fortress6 .basic-entry .h5 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: normal; }
 
 .fortress6 .basic-entry h6, .fortress6 .basic-entry .h6 {
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   line-height: normal; }
+
+.fortress6 .basic-entry p {
+  color: var(--site-secondary-color); }
+
+.fortress6 .basic-entry ul.check-mark-listing {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.5rem;
+  row-gap: 0.7rem; }
+  .fortress6 .basic-entry ul.check-mark-listing li {
+    margin: 0px;
+    padding: 0 0 0 30px;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: var(--site-primary-font-normal);
+    width: 42%; }
+    .fortress6 .basic-entry ul.check-mark-listing li:before {
+      font-family: 'FontAwesome';
+      content: "\f00c";
+      color: var(--site-primary-color);
+      position: absolute;
+      left: 0px;
+      top: 0px; }
 
 .fortress6 .group-btn-module {
   display: flex;
@@ -9657,10 +9731,6 @@ html, body {
       animation-duration: 1.3s; }
     .fortress6 .page-banner-module .main-carousel .slider-content .normal-text-element-module {
       max-width: 70%; }
-      .fortress6 .page-banner-module .main-carousel .slider-content .normal-text-element-module.basic-entry h1, .fortress6 .page-banner-module .main-carousel .slider-content .normal-text-element-module.basic-entry .h1 {
-        font-weight: var(--site-primary-font-light); }
-      .fortress6 .page-banner-module .main-carousel .slider-content .normal-text-element-module.basic-entry h2, .fortress6 .page-banner-module .main-carousel .slider-content .normal-text-element-module.basic-entry .h2, .fortress6 .page-banner-module .main-carousel .slider-content .normal-text-element-module.basic-entry h3, .fortress6 .page-banner-module .main-carousel .slider-content .normal-text-element-module.basic-entry .h3, .fortress6 .page-banner-module .main-carousel .slider-content .normal-text-element-module.basic-entry h4, .fortress6 .page-banner-module .main-carousel .slider-content .normal-text-element-module.basic-entry .h4, .fortress6 .page-banner-module .main-carousel .slider-content .normal-text-element-module.basic-entry h5, .fortress6 .page-banner-module .main-carousel .slider-content .normal-text-element-module.basic-entry .h5, .fortress6 .page-banner-module .main-carousel .slider-content .normal-text-element-module.basic-entry h6, .fortress6 .page-banner-module .main-carousel .slider-content .normal-text-element-module.basic-entry .h6 {
-        font-weight: var(--site-primary-font-thin); }
 
 .fortress6 .number-count-module .my-col > .main-wrap {
   height: 150px;
@@ -9680,6 +9750,56 @@ html, body {
     font-weight: var(--site-primary-font-medium);
     line-height: normal;
     letter-spacing: 2px; }
+
+.fortress6 .module-header {
+  padding-bottom: 1rem;
+  position: relative; }
+  .fortress6 .module-header.pull-text-center::before {
+    left: 50%;
+    margin-left: -75px; }
+  .fortress6 .module-header.pull-text-center:after {
+    -webkit-animation: moduleHeaderAnimatingLineCenter 5s infinite linear;
+    animation: moduleHeaderAnimatingLineCenter 5s infinite linear; }
+  .fortress6 .module-header:before {
+    position: absolute;
+    content: " ";
+    width: 150px;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    background: var(--site-primary-color);
+    border-radius: 2px; }
+  .fortress6 .module-header:after {
+    position: absolute;
+    content: " ";
+    width: 6px;
+    height: 5px;
+    bottom: 0px;
+    background: #FFFFFF;
+    -webkit-animation: moduleHeaderAnimatingLineCenter 5s infinite linear;
+    animation: moduleHeaderAnimatingLineCenter 5s infinite linear; }
+  .fortress6 .module-header.basic-entry h4, .fortress6 .module-header.basic-entry .h4, .fortress6 .module-header.basic-entry h5, .fortress6 .module-header.basic-entry .h5, .fortress6 .module-header.basic-entry h6, .fortress6 .module-header.basic-entry .h6 {
+    color: var(--site-primary-color);
+    font-weight: var(--site-primary-font-normal);
+    text-transform: uppercase; }
+
+@keyframes moduleHeaderAnimatingLine {
+  0% {
+    left: 0; }
+  50% {
+    left: 145px; }
+  100% {
+    left: 0; } }
+
+@keyframes moduleHeaderAnimatingLineCenter {
+  0% {
+    left: 50%;
+    margin-left: -75px; }
+  50% {
+    margin-left: 70px; }
+  100% {
+    left: 50%;
+    margin-left: -75px; } }
 
 /*! Vendor */
 /*!

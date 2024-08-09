@@ -194,7 +194,54 @@ jQuery('.touch .has-submenu > a').addClass('dual-click');
  jQuery('.go-top').click(function(){
    jQuery('html, body').animate({scrollTop: 0}, 400);
   
-});      
+});
+
+
+// viewport checker
+jQuery('.viewport-appear.classToAddzoomIn.number-count-start').viewportChecker({
+  classToAdd: 'zoomIn',
+  repeat: false,
+  offset: 0,
+  callbackFunction: function (elem, action) {
+    $('.number-count-content .the-number').each(function () {
+      $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+      }, {
+          duration: 3000,
+          easing: 'swing',
+          step: function (now) {
+              $(this).text(Math.ceil(now));
+          }
+      });
+  });
+  },
+});
+
+
+jQuery('.viewport-appear.classToAddzoomIn').viewportChecker({
+  classToAdd: 'zoomIn',
+  repeat: false,
+  offset: 0
+});
+
+jQuery('.viewport-appear.classToAddfadeInLeft').viewportChecker({
+  classToAdd: 'fadeInLeft',
+  repeat: false,
+  offset: 0
+});
+
+jQuery('.viewport-appear.classToAddfadeInRight').viewportChecker({
+  classToAdd: 'fadeInRight',
+  repeat: false,
+  offset: 0
+});
+
+jQuery('.viewport-appear.classToAddfadeInUp').viewportChecker({
+  classToAdd: 'fadeInUp',
+  repeat: false,
+  offset: 0
+});
+
 
 
 });
