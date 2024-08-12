@@ -242,6 +242,18 @@ jQuery('.viewport-appear.classToAddfadeInUp').viewportChecker({
   offset: 0
 });
 
+// testimonial-module
+jQuery('.testimonial-module').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: false,
+  centerMode: true,
+  centerPadding: '0px',
+  speed: 1000,
+});
+
 
 
 });
