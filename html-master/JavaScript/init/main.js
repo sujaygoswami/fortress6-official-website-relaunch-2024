@@ -1,3 +1,23 @@
+// client logo slider
+if ($(".splide").length) {
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('.logo-carousel-module .splide', {
+      type: 'loop',
+      drag: 'free',
+      focus: 'center',
+      arrows: false,
+      pagination: false,
+      autoWidth: true,
+      gap: 50,
+      perPage: 7,
+      autoScroll: {
+        speed: 1,
+      },
+    }).mount(window.splide.Extensions);
+  });
+}
+
+
 jQuery(document).ready(function(){
 
 
@@ -253,6 +273,7 @@ jQuery('.testimonial-module').slick({
   centerPadding: '0px',
   speed: 1000,
 });
+
 
 
 

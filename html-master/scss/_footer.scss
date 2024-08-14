@@ -1,5 +1,55 @@
 .fortress6{
 
-	
+	footer.footer{
+        .footer-acsolute-content-part{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            pointer-events: none;
+            z-index: 1;
+
+            .my-col{
+                pointer-events: auto;
+            }
+        }
+        .footer-secondary-part{
+            background-color: var(--site-dark-2);
+            color: white;
+        }
+        .footer-primary-part{
+            background-color: var(--site-dark);
+            color: white;
+        }
+        .footer-address{
+            line-height: 36px;
+            .fa{
+                font-size: 22px;
+                width: 30px;
+            }
+        }
+
+        .footer-quick-link{
+            ul{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+
+                li{
+                    margin: 0 0 10px 0;
+                    padding: 0 0 0 25px;
+                    background-image: url(../Images/arrow-right-svgrepo-com-primary.svg);
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                    background-size: 20px;
+
+                    a{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
 	
 }

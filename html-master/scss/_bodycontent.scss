@@ -1,8 +1,22 @@
 .fortress6 {
 
     //basic starts
+    .global-social{
+        display: flex;
+        column-gap: 10px;
+
+        .site-btn{
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+        }
+    }
+    .text-normal-case{
+        text-transform: none !important;
+    }
     .text-uppercase{
-        text-transform: uppercase;
+        text-transform: uppercase !important;
     }
     .global-border-radius-all-side{
         border-radius: 2px;
@@ -78,6 +92,7 @@
 
     // site-form-module
     .site-form-module{
+        
         .form-control{
             border-radius: 2px;
             border: none;
@@ -291,6 +306,14 @@
         &.form-btn{
             @include transition(all 0.3s ease 0s);
             padding: 1rem 3rem;
+
+            &.absolute-form-btn-type-1{
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                height: 55px;
+                padding: 0 15px;
+            }
         }
 
         &.iconic-alone-btn-type-1{
@@ -311,6 +334,18 @@
             &:hover{
                 box-shadow: inset 0 0 0 0 var(--site-primary-color);
                 background-color: var(--site-primary-color-light);;
+            }
+        }
+
+        &.primary-color-dark-btn{
+            border: 1px solid transparent;
+            background-color: var(--site-dark);
+            color: white;
+            box-shadow: inset 0 0 0 50px transparent;
+
+            &:hover{
+                box-shadow: inset 0 0 0 0 var(--site-dark);
+                background-color: var(--site-primary-color-dark-light);;
             }
         }
 
@@ -448,8 +483,8 @@
             height: 5px;
             bottom: 0px;
             background: #FFFFFF;
-            -webkit-animation: moduleHeaderAnimatingLineCenter 5s infinite linear;
-            animation: moduleHeaderAnimatingLineCenter 5s infinite linear;
+            -webkit-animation: moduleHeaderAnimatingLine 5s infinite linear;
+            animation: moduleHeaderAnimatingLine 5s infinite linear;
         }
         &.basic-entry{
             h4, h5, h6{
@@ -609,6 +644,15 @@
         
     }
     // bild-with-text-widget
+
+    // logo-carousel-module
+    .logo-carousel-module{
+        overflow: hidden;
+        img{
+            max-width: 80px;
+        }
+    }
+    // logo-carousel-module
 
     // key frame animations
     @keyframes moduleHeaderAnimatingLine {
