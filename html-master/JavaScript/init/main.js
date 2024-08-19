@@ -272,8 +272,30 @@ jQuery('.testimonial-module').slick({
   centerMode: true,
   centerPadding: '0px',
   speed: 1000,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
 });
 
+// width condition
+var FROMLGDESKTOPTOREST = 1500
+
+if ($(window).width() <= FROMLGDESKTOPTOREST) {
+  
+ jQuery('header.header .header-main-wrap > .container-fluid').addClass('container');
+
+};
 
 
 

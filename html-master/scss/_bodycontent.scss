@@ -1,5 +1,10 @@
 .fortress6 {
 
+    main .container{
+        overflow-x: hidden !important;
+    }
+    
+
     //basic starts
     .global-social{
         display: flex;
@@ -50,11 +55,18 @@
         color: var(--site-text-dark);
     }
     .uplift-section-type-1{
-        margin-top: -75px;
+        
 
-        & + section{
-            padding-top: 200px;
+        &.no-viewport-lg-uplift{
+            @media screen and (min-width: $xl) {
+                margin-top: -75px;
+
+                & + section{
+                    padding-top: 200px;
+                }
+            }
         }
+
     }
     .grid-flex-v-align-center{
         align-items: center;
@@ -288,6 +300,7 @@
     .group-btn-module{
         display: flex;
         column-gap: 20px;
+        row-gap: 20px;
     }
     .site-btn{
         display: inline-block;
@@ -531,7 +544,7 @@
             }
         }
         .testimonial-sliding-cell{
-            padding: 30px 0;
+            
             & > .main-wrap{
                 background-color: var(--site-primary-color-extreme-light);
                 @include transition(all 0.3s ease 0s);
@@ -539,8 +552,10 @@
 
             &.slick-current{
                 & > .main-wrap{
-                    background-color: white;
-                    box-shadow: 0 0 30px #DDDDDD;
+                    @media screen and (min-width: $md) {
+                        background-color: white;
+                    }
+                    
                 }
             }
         }

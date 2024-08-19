@@ -1,0 +1,104 @@
+@media screen and (max-width: ($xl - 1px)) {
+
+    .fortress6{
+
+        .section-pad-default{
+            padding: 50px 0;
+        }
+
+        .no-viewport-lg-row-gap{
+            row-gap: 0px !important;
+        }
+
+        .no-viewport-lg-centerd-container{
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            max-width: 100% !important;
+        }
+
+        .no-lg-row{
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+
+            .no-lg-col{
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+            }
+        }
+
+        
+
+        // typography
+
+        footer.footer{
+            .footer-acsolute-content-part{
+                position: static;
+            }
+        }
+    
+        .basic-entry{
+            h1{
+                font-size: 4rem;
+                line-height: 1.2;
+            }
+    
+            h2{
+                font-size: 3.5rem;
+                line-height: normal;
+            }
+    
+            // h3{
+            //     font-size: 3rem;
+            //     line-height: normal;
+            // }
+    
+            // h4{
+            //     font-size: 2rem;
+            //     line-height: normal;
+            // }
+    
+            // h5{
+            //     font-size: 1.5rem;
+            //     line-height: normal;
+            // }
+    
+            // h6{
+            //     font-size: 1.3rem;
+            //     line-height: normal;
+            // }
+        }
+         // typography
+        // page-banner-module
+        .page-banner-module{
+            .main-carousel{
+                .slider-content{
+                    .normal-text-element-module{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        // page-banner-module
+        
+    }
+    
+}
+
+
+@media screen and (max-width: ($md - 1px)) {
+    .fortress6{
+        .group-btn-module{
+            flex-wrap: wrap;
+        }
+
+        .basic-entry{
+            ul{
+                &.check-mark-listing, &.custom-mark-listing{
+                    li{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
