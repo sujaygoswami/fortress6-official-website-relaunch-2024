@@ -138,6 +138,7 @@
         display: flex;
         column-gap: 25px;
         row-gap: 25px;
+        align-items: center;
         &.wrap-view{
             flex-wrap: wrap;
         }

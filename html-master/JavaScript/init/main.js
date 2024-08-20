@@ -100,9 +100,11 @@ site.MOBILEMENUHEADERSCROLLFUNCTION = function() {
   
   if (jQuery(document).scrollTop() > 50) {
     jQuery('header.header').addClass('scrolled-effect');
+    jQuery('.mobile-nav .navbar').removeClass('navbar-dark');
   }
   else {
     jQuery('header.header').removeClass('scrolled-effect');
+    jQuery('.mobile-nav .navbar').addClass('navbar-dark');
   }
 };
 

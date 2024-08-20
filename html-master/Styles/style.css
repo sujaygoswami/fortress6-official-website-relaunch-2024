@@ -9440,6 +9440,10 @@ html, body {
   left: 0px;
   top: 0px;
   z-index: 100; }
+  .fortress6 header.header .mobile-nav .nav-link {
+    color: rgba(255, 255, 255, 0.55) !important; }
+    .fortress6 header.header .mobile-nav .nav-link.active {
+      color: white !important; }
   .fortress6 header.header .header-logo-holder .scrolled-logo {
     display: none; }
   .fortress6 header.header.scrolled-effect .header-logo-holder .scrolled-logo {
@@ -9636,7 +9640,8 @@ html, body {
 .fortress6 .global-iconic-widget {
   display: flex;
   column-gap: 25px;
-  row-gap: 25px; }
+  row-gap: 25px;
+  align-items: center; }
   .fortress6 .global-iconic-widget.wrap-view {
     flex-wrap: wrap; }
 
@@ -10101,10 +10106,40 @@ html, body {
     max-width: 100%; } }
 
 @media screen and (max-width: 767px) {
+  .fortress6 header.header .header-main-wrap {
+    padding: 0 1.5rem !important; }
   .fortress6 .group-btn-module {
     flex-wrap: wrap; }
+  .fortress6 .site-btn {
+    font-size: 0.8rem; }
+  .fortress6 .basic-entry p, .fortress6 .basic-entry li {
+    font-size: 0.8rem;
+    line-height: 1.2rem; }
+  .fortress6 .basic-entry h1, .fortress6 .basic-entry .h1 {
+    font-size: 2rem;
+    line-height: normal; }
+  .fortress6 .basic-entry h2, .fortress6 .basic-entry .h2 {
+    font-size: 1.8rem;
+    line-height: normal; }
+  .fortress6 .basic-entry h3, .fortress6 .basic-entry .h3 {
+    font-size: 1.5rem;
+    line-height: normal; }
+  .fortress6 .basic-entry h4, .fortress6 .basic-entry .h4 {
+    font-size: 1rem;
+    line-height: normal; }
+  .fortress6 .basic-entry h5, .fortress6 .basic-entry .h5 {
+    font-size: 0.8rem;
+    line-height: normal; }
+  .fortress6 .basic-entry h6, .fortress6 .basic-entry .h6 {
+    font-size: 0.8rem;
+    line-height: normal; }
   .fortress6 .basic-entry ul.check-mark-listing li, .fortress6 .basic-entry ul.custom-mark-listing li {
-    width: 100%; } }
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    padding-left: 20px; }
+    .fortress6 .basic-entry ul.check-mark-listing li i, .fortress6 .basic-entry ul.custom-mark-listing li i {
+      font-size: 12px; } }
 
 /*! Vendor */
 /*!

@@ -8,6 +8,16 @@
         top: 0px;
         z-index: 100;
 
+        .mobile-nav{
+            .nav-link{
+                color: rgba($color: #fff, $alpha: 0.55) !important;
+
+                &.active{
+                    color: rgba($color: #fff, $alpha: 1) !important;
+                }
+            }
+        }
+
         .header-logo-holder{
             .scrolled-logo{
                 display: none;
